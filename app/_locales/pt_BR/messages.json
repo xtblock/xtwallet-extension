@@ -597,14 +597,6 @@
     "message": "Código: $1",
     "description": "Displayed error name for debugging purposes. $1 is the error name"
   },
-  "errorPageMessage": {
-    "message": "Tente novamente ao recarregar a página ou entre em contato com o suporte pelo endereço support@metamask.io",
-    "description": "Message displayed on generic error page in the fullscreen or notification UI"
-  },
-  "errorPagePopupMessage": {
-    "message": "Tente novamente ao fechar e reabrir o pop-up ou entre em contato com o suporte em support@metamask.io",
-    "description": "Message displayed on generic error page in the popup UI"
-  },
   "errorPageTitle": {
     "message": "O MetaMask encontrou um erro",
     "description": "Title of generic error page"
@@ -1617,9 +1609,6 @@
   },
   "swapEstimatedNetworkFeesInfo": {
     "message": "Essa é a estimativa da taxa de rede que será usada para concluir seu swap. O valor real pode mudar conforme as condições de rede."
-  },
-  "swapFailedErrorDescription": {
-    "message": "Seus fundos estão seguros e ainda disponíveis na sua carteira."
   },
   "swapFailedErrorTitle": {
     "message": "Falha no swap"
