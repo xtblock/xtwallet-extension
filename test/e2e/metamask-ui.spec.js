@@ -1,4 +1,5 @@
 const assert = require('assert');
+const { until } = require('selenium-webdriver');
 
 const enLocaleMessages = require('../../app/_locales/en/messages.json');
 const { tinyDelayMs, regularDelayMs, largeDelayMs } = require('./helpers');
@@ -135,16 +136,16 @@ describe('MetaMask', function () {
   describe("Close the what's new popup", function () {
     it("should show the what's new popover", async function () {
       const popoverTitle = await driver.findElement(
-        By.css('.popover-header__title h2'),
+        '.popover-header__title h2',
       );
 
       assert.equal(await popoverTitle.getText(), "What's new");
     });
 
     it("should close the what's new popup", async function () {
-      const popover = await driver.findElement(By.css('.popover-container'));
+      const popover = await driver.findElement('.popover-container');
 
-      await driver.clickElement(By.css('[data-testid="popover-close"]'));
+      await driver.clickElement('[data-testid="popover-close"]');
 
       await driver.wait(until.stalenessOf(popover));
     });
